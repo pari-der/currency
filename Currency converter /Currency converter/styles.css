@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00416A, #E4E5E6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.converter-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #00416A;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #00416A;
+    box-shadow: 0 0 10px rgba(0, 65, 106, 0.1);
+}
+
+.currency-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.currency-row .input-group {
+    flex: 1;
+}
+
+.swap-button {
+    background: #00416A;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1rem auto;
+    transition: all 0.3s ease;
+}
+
+.swap-button:hover {
+    transform: rotate(180deg);
+    background: #005c94;
+}
+
+.convert-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, #00416A, #005c94);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.convert-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 65, 106, 0.3);
+}
+
+.result {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #00416A;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .currency-row {
+        flex-direction: column;
+    }
+
+    .converter-container {
+        padding: 1.5rem;
+    }
+} 
